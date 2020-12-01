@@ -1,0 +1,29 @@
+﻿<Window x:Name="AdoptAnInsectMainWindow" x:Class="AdoptInsectGUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AdoptInsectGUI"
+        mc:Ignorable="d"
+        Title="Adopt An Insect GUI by Hannah Hamilton" Height="450" Width="800">
+    <Grid x:Name="MainGrid" Loaded="Grid_Loaded">
+        <Rectangle x:Name="DecorativeRectangle" Fill="#FFFFAF4F" HorizontalAlignment="Left" Height="419" Stroke="Black" VerticalAlignment="Top" Width="325"/>
+        <Image x:Name="GabeImage" HorizontalAlignment="Left" Height="171" Margin="58,10,0,0" VerticalAlignment="Top" Width="216" Source="gabetheinsect.jpg" Stretch="Fill"/>
+        <Border x:Name="DecorativeBorder" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="57" Margin="343,10,0,0" VerticalAlignment="Top" Width="439">
+            <TextBlock x:Name="GameTitleText" TextWrapping="Wrap" Text="Adopt-An-Insect!" Margin="1,9,-1,-9" TextAlignment="Center" FontSize="20"/>
+        </Border>
+        <TextBlock x:Name="WelcomeMessage" HorizontalAlignment="Left" Margin="343,104,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="22" Width="439" TextAlignment="Center"/>
+        <TextBlock x:Name="InsectName" HorizontalAlignment="Left" Margin="109,208,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="23" Width="120"/>
+        <TextBlock x:Name="InsectNumberOfLegs" HorizontalAlignment="Left" Margin="109,236,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="23" Width="120"/>
+        <TextBlock x:Name="InsectBreedingSeason" HorizontalAlignment="Left" Margin="86,264,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="23" Width="164"/>
+        <TextBlock x:Name="InsectDiet" HorizontalAlignment="Left" Margin="109,292,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="23" Width="120"/>
+        <TextBox x:Name="PlayerNameInput" HorizontalAlignment="Left" Height="23" Margin="506,131,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="NameConfirmButton" Content="Confirm" HorizontalAlignment="Left" Margin="529,161,0,0" VerticalAlignment="Top" Width="75" Click="NameConfirmButton_Click"/>
+        <TextBlock x:Name="PlayerNameFeedback" HorizontalAlignment="Left" Margin="343,208,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="439" Height="23" TextAlignment="Center"/>
+        <Button x:Name="YesButton" Content="Yes" HorizontalAlignment="Left" Margin="428,239,0,0" VerticalAlignment="Top" Width="75" Click="YesButton_Click"/>
+        <Button x:Name="NoButton" Content="No" HorizontalAlignment="Left" Margin="632,239,0,0" VerticalAlignment="Top" Width="75" Click="NoButton_Click"/>
+        <TextBlock x:Name="GabeAdoptionStatus" HorizontalAlignment="Left" Margin="428,279,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="279"/>
+        <TextBlock x:Name="EndMessage" HorizontalAlignment="Left" Margin="468,308,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="101" Width="204" FontSize="20" TextAlignment="Center" FontFamily="Rockwell Extra Bold"/>
+
+    </Grid>
+</Window>
